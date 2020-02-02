@@ -5,7 +5,6 @@ import java.math.RoundingMode;
 import java.util.Optional;
 
 import javax.persistence.EntityNotFoundException;
-import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,8 +19,6 @@ import io.reactivex.Single;
 
 @Service
 public class MonedaServiceImpl implements MonedaService{
-
-	static double tipoCambio2 = 3.5;
 	
 	@Autowired
 	private MonedaRepository monedaRepository;
